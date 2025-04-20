@@ -4,44 +4,72 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
     <meta name="description" content="Ubicación"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@500;700&family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="Ubicacion.css">
     <title>Ubicación</title>
+    
  </head>
 
- <body>
-    
-    <nav>
-        <ul>
-            <li>
+ <body class="Inicio">
 
-                
-                <a href="./Inicio.html"Inicio>Inicio</a>
+    <div class="logo-container">
+        <div class="franja-degradado">
+    <iframe
+    src="./Img/logo-cesde-blanco-sin-fondov2.png"
+    width="204"
+    height="60"
+    frameborde="0"
+    ></iframe>
+   </div>
+    <div class="franja-blanca"></div>
+    </div>
+
+    <nav class="Centrar">
+        <ul> 
+            <li>
+                <button onclick="location.href='./Inicio.html'" class="boton">
+                    <img src="./Iconos/Inicio.png" alt="Inicio" Class="Icono">
+                    <span class="texto">Inicio</span>
+                </button>
+      
             </li>
             <li>
-                <a href="./Servicios.html"Servicios>Servicios</a>
+                <button onclick="location.href='./Servicios.html'" class="boton">
+                    <img src="./Iconos/Servicios.png" alt="Servicios" Class="Icono">
+                    <span class="texto">Servicios</span>
+                </button>
             </li>
             <li>
-                <a href="./Blog.html"Blog>Blog</a>
+                <button onclick="location.href='./Blog.html'" class="boton">
+                    <img src="./Iconos/Blog.png" alt="Blog" Class="Icono">
+                    <span class="texto">Blog</span>
+                </button>
             </li>
             <li>
-                <a href="./Contacto.html"Contacto>Contacto</a> 
+                <button onclick="location.href='./Contacto.html'" class="boton">
+                    <img src="./Iconos/Contacto.png" alt="Contacto" Class="Icono">
+                    <span class="texto">Contacto</span>
+                </button>
             </li>
             <li>
-                <a href="./Ubicacion.html"Ubicación>Ubicación</a> 
+                <button onclick="location.href='./Ubicacion.html'" class="boton">
+                    <img src="./Iconos/Ubicacion.png" alt="Ubicación" Class="Icono">
+                    <span class="texto">Ubicación</span>
+                </button>
             </li>
         </ul>
     </nav>
 
-    <h1>Ubicación</h1>
+    <h1 class="h1">Ubicación</h1>
 
-    <iframe
+    <div class="ubicacion-container">
+
+
+    <iframe class="mapa"
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.142921138755!2d-75.5625611!3d6.244888899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442859d833cfa3%3A0xa3fca5c91547777f!2sCesde%20-%20Centro%20de%20Estudios%20Especializados!5e0!3m2!1ses-419!2sco!4v1743054598364!5m2!1ses-419!2sco"
-    widht="600"
-    height="450"
-    style="border: 0"
-    allowfullscreen=""
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"
     ></iframe>
+   </div>
 
 
     <footer style="position: fixed; bottom: 0;">

@@ -1,0 +1,170 @@
+.Inicio {
+    background: rgb(218,10,46);
+    background: linear-gradient(90deg, rgba(218,10,46,1) 0%, rgba(218,10,46,1) 35%, rgba(218,26,104,1) 100%);
+
+}
+.logo-container{
+    display: flex;
+}
+
+.fraja-degradado{
+    background: linear-gradient(to right #240636, #c31432);
+    padding: 0;
+    margin: 0;
+}
+.franja-blanca{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 60px;
+}
+
+/*Centrar Iconos*/
+.Centrar {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 60px; 
+    z-index: 1000; /
+}
+
+/*Centrar verticalmente los iconos*/
+ul{
+    position: relative;
+    display: flex;
+    gap: 25px;
+}
+
+/*Centrar verticalmente los iconos*/
+ul li {
+    position: relative;
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    top:0;
+    transition: 0.5s;
+}
+
+/*Movimiento de los botones*/
+ul li:hover{
+width: 180px;
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+}
+
+/*Movimiento de los botones*/
+ul li::before{
+    content: ' ';
+    position:relative;
+    inset:0;
+    border-radius: 50px;
+    opacity: 0;
+    transition: 0.5;
+}
+
+/* Color de fondo del botón */
+.boton {
+    background-color: #c218a000; 
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    transition: background 0.3s, transform 0.2s;
+}
+
+/* Iconos dentro de los botones */
+.boton img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Efecto al pasar el mouse */
+.boton:hover {
+    background-color: #ec066600;
+    transform: scale(1.1);
+}
+
+/* Efecto al presionar */
+.boton:active {
+    transform: scale(0.9);
+}
+
+/* Ocultar texto y mostrarlo al pasar el mouse */
+.boton span {
+    display: none;
+}
+
+/* Movimiento icono, texto y mostrarlo al pasar el mouse */
+.boton:hover span {
+    display: inline;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(90deg, #d40029, #e91e63);
+}
+
+.contact-section {
+  display: flex;
+  place-items: center;
+  flex-wrap: wrap;
+  max-width: 500px;
+  margin: 50px auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.image-side {
+  flex: 1;
+  min-width: 300px;
+  background-color: #fff;
+}
+
+.image-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-side {
+  flex: 1;
+  padding: 40px;
+  background-color: #d40029;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-side h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.text-side p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+
+
+

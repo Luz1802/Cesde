@@ -5,40 +5,63 @@
     <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
     <meta name="description" content="Prestamo de Equipos"/>
     <link rel="icon" href="./img/icono-cesde.png" type="image/x-icon" sizes="192x192">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="Prestamo.css">
     <title>Solicitud de Prestamo</title>
  </head>
 
- <body>
+ <div class="logo-container">
+    <div class="franja-degradado">
+<iframe
+src="./Img/logo-cesde-blanco-sin-fondov2.png"
+width="204"
+height="60"
+frameborde="0"
+></iframe>
+</div>
+<div class="franja-blanca"></div>
+</div>
+<nav class="Centrar">
+    <ul> 
+        <li>
+            <button onclick="location.href='./Inicio.html'" class="boton">
+                <img src="./Iconos/Inicio.png" alt="Inicio" Class="Icono">
+                <span class="texto">Inicio</span>
+            </button>
+  
+        </li>
+        <li>
+            <button onclick="location.href='./Servicios.html'" class="boton">
+                <img src="./Iconos/Servicios.png" alt="Servicios" Class="Icono">
+                <span class="texto">Servicios</span>
+            </button>
+        </li>
+        <li>
+            <button onclick="location.href='./Blog.html'" class="boton">
+                <img src="./Iconos/Blog.png" alt="Blog" Class="Icono">
+                <span class="texto">Blog</span>
+            </button>
+        </li>
+        <li>
+            <button onclick="location.href='./Contacto.html'" class="boton">
+                <img src="./Iconos/Contacto.png" alt="Contacto" Class="Icono">
+                <span class="texto">Contacto</span>
+            </button>
+        </li>
+        <li>
+            <button onclick="location.href='./Ubicacion.html'" class="boton">
+                <img src="./Iconos/Ubicacion.png" alt="Ubicación" Class="Icono">
+                <span class="texto">Ubicación</span>
+            </button>
+        </li>
+    </ul>
+</nav>
 
-    <iframe
-    src="./Img/logo-cesde-blanco-sin-fondov2.png"
-    width="204"
-    height="60"
-    frameborde="0"
-   ></iframe>
-    
-    <nav>
-        <ul>
-            <li>
-                <a href="./Inicio.html"Inicio>Inicio</a>
-            </li>
-            <li>
-                <a href="./Servicios.html"Servicios>Servicios</a>
-            </li>
-            <li>
-                <a href="./Blog.html"Blog>Blog</a>
-            </li>
-            <li>
-                <a href="./Contacto.html"Contacto>Contacto</a> 
-            </li>
-            <li>
-                <a href="./Ubicacion.html"Ubicación>Ubicación</a>  
-            </li>
-        </ul>
-    </nav>
+ <body class="Inicio">
 
-    <h1>Solicitud de Préstamo de Equipos</h1>
+
     <form action="/Solicitar Préstamo" method="POST">
+        <h1>Solicitud de Préstamo de Equipos</h1>
         
         <label for="Nombre">Nombre Completo</label>
         <input type="text" id="Nombre" name="Nombre" required>
@@ -68,7 +91,7 @@
     </form>
 
 
-    <footer style="position: fixed; bottom: 0;">
+    <footer style="position: fixed; left: 41%; bottom: 0;">
         <p>
         © 2023 CESDE - Todos los derechos reservados.
         </p>

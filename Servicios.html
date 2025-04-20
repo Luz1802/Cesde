@@ -5,86 +5,107 @@
     <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
     <meta name="description" content="Servicios"/>
     <link rel="icon" href="./img/icono-cesde.png" type="image/x-icon" sizes="192x192">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@500;700&family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="Servicios.css">
     <title>Servicios</title>
  </head>
 
- <body>
+ <body class="Inicio">
 
+    <div class="logo-container">
+        <div class="franja-degradado">
     <iframe
     src="./Img/logo-cesde-blanco-sin-fondov2.png"
     width="204"
     height="60"
     frameborde="0"
-   ></iframe>
-    
-    <nav>
-        <ul>
+    ></iframe>
+   </div>
+    <div class="franja-blanca"></div>
+    </div>
+
+    <nav class="Centrar">
+        <ul> 
             <li>
-                <a href="./Inicio.html"Inicio>Inicio</a>
+                <button onclick="location.href='./Inicio.html'" class="boton">
+                    <img src="./Iconos/Inicio.png" alt="Inicio" Class="Icono">
+                    <span class="texto">Inicio</span>
+                </button>
+      
             </li>
             <li>
-                <a href="./Servicios.html"Servicios>Servicios</a>
+                <button onclick="location.href='./Servicios.html'" class="boton">
+                    <img src="./Iconos/Servicios.png" alt="Servicios" Class="Icono">
+                    <span class="texto">Servicios</span>
+                </button>
             </li>
             <li>
-                <a href="./Blog.html"Blog>Blog</a>
+                <button onclick="location.href='./Blog.html'" class="boton">
+                    <img src="./Iconos/Blog.png" alt="Blog" Class="Icono">
+                    <span class="texto">Blog</span>
+                </button>
             </li>
             <li>
-                <a href="./Contacto.html"Contacto>Contacto</a> 
+                <button onclick="location.href='./Contacto.html'" class="boton">
+                    <img src="./Iconos/Contacto.png" alt="Contacto" Class="Icono">
+                    <span class="texto">Contacto</span>
+                </button>
             </li>
             <li>
-                <a href="./Ubicacion.html"Ubicación>Ubicación</a> 
+                <button onclick="location.href='./Ubicacion.html'" class="boton">
+                    <img src="./Iconos/Ubicacion.png" alt="Ubicación" Class="Icono">
+                    <span class="texto">Ubicación</span>
+                </button>
             </li>
         </ul>
+        <button class="btn" onclick="location.href='./Login.html'">Iniciar Sesión</button> 
     </nav>
 
-    <nav>
-    <button class="login-btn" onclick="location.href='./Login.html'">Iniciar Sesión</button> 
-    </nav>
     
-    
-    <h1>
+    <h1 class="Titulo">
         Servicios de Préstamo de Equipos
     </h1>
     
-    <img src="./img/desarrollo-software-cesde.jpg" width="150px" height="150px">
+<div class="contenedor-servicios">
+  <div class="tarjeta">
+    <img src="./img/desarrollo-software-cesde.jpg" alt="Desarrollo de Software">
+    <h3 class="Descripción1">Desarrollo de Software</h3>
+    <p class="P">Equipos con herramientas especializadas para programación.</p>
+    <a href="prestamo.html" class="boton-mas-informacion">
+        <span class="texto-boton">MÁS INFORMACIÓN</span>
+        <svg class="icono-flecha" viewBox="0 0 24 24">
+          <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>                 
+  </div>
 
-    <h3>
-        Desarrollo de Software
-    </h3>
+  <div class="tarjeta">
+    <img src="./img/Diseno-grafico-cesde.jpg" alt="Diseño Gráfico">
+    <h3 class="Descripción2">Diseño Gráfico</h3>
+    <p class="P">Equipos con software de diseño y edición gráfica.</p>
+    <a href="prestamo.html" class="boton-mas-informacion">
+        <span class="texto-boton">MÁS INFORMACIÓN</span>
+        <svg class="icono-flecha" viewBox="0 0 24 24">
+          <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>           
+  </div>
 
-    <p>
-      Equipos con herramientas especializadas para programación.
-    </p>
-   
-    <a href="prestamo.html">Más información...</a>
-    <br>
-
-    <img src="./img/Diseno-grafico-cesde.jpg" width="150px" height="150px">
-
-    <h3>
-        Diseño Gráfico
-    </h3>
-
-    <p>
-       Equipos con software de diseño y edición gráfica.
-    </p>
-   
-    <a href="prestamo.html">Más información...</a>
-    <br>
-
-    <img src="./img/herramientas-ofimaticas.jpg" width="150px" height="150px">
-
-    <h3>
-        Herramientas Ofimáticas
-    </h3>
-    
-    <p>
-        Equipos con software básico para tareas administrativas y ofimáticas.
-    </p>
-
-    <a href="Prestamo.html">Más información...</a>
-    
-    <footer>
+  <div class="tarjeta">
+    <img src="./img/herramientas-ofimaticas.jpg" alt="Herramientas Ofimáticas">
+    <h3 class="Descripción3">Herramientas Ofimáticas</h3>
+    <p class="P">Equipos con software básico para tareas administrativas y ofimáticas.</p>
+    <a href="prestamo.html" class="boton-mas-informacion">
+        <span class="texto-boton">MÁS INFORMACIÓN</span>
+        <svg class="icono-flecha" viewBox="0 0 24 24">
+          <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>            
+  </div>
+</div>
+  
+    <footer style="position: fixed; left: 41%; bottom: 0;">
         <p>
         © 2023 CESDE - Todos los derechos reservados.
         </p>

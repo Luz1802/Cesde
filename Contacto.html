@@ -5,58 +5,78 @@
     <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
     <meta name="description" content="Blog"/>
     <link rel="icon" href="./img/icono-cesde.png" type="image/x-icon" sizes="192x192">
-    <title>Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@500;700&family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="Contacto.css">
+    <title>Contacto</title>
  </head>
 
- <body>
+ <body class="Inicio">
 
+ 
+    <div class="logo-container">
+        <div class="franja-degradado">
     <iframe
     src="./Img/logo-cesde-blanco-sin-fondov2.png"
     width="204"
     height="60"
     frameborde="0"
-   ></iframe>
-    
-    <nav>
-        <ul>
+    ></iframe>
+   </div>
+    <div class="franja-blanca"></div>
+    </div>
+
+    <nav class="Centrar">
+        <ul> 
             <li>
-                <a href="./Inicio.html"Inicio>Inicio</a>
+                <button onclick="location.href='./Inicio.html'" class="boton">
+                    <img src="./Iconos/Inicio.png" alt="Inicio" Class="Icono">
+                    <span class="texto">Inicio</span>
+                </button>
+      
             </li>
             <li>
-                <a href="./Servicios.html"Servicios>Servicios</a>
+                <button onclick="location.href='./Servicios.html'" class="boton">
+                    <img src="./Iconos/Servicios.png" alt="Servicios" Class="Icono">
+                    <span class="texto">Servicios</span>
+                </button>
             </li>
             <li>
-                <a href="./Blog.html"Blog>Blog</a>
+                <button onclick="location.href='./Blog.html'" class="boton">
+                    <img src="./Iconos/Blog.png" alt="Blog" Class="Icono">
+                    <span class="texto">Blog</span>
+                </button>
             </li>
             <li>
-                <a href="./Contacto.html"Contacto>Contacto</a> 
+                <button onclick="location.href='./Contacto.html'" class="boton">
+                    <img src="./Iconos/Contacto.png" alt="Contacto" Class="Icono">
+                    <span class="texto">Contacto</span>
+                </button>
             </li>
             <li>
-                <a href="./Ubicacion.html"Ubicación>Ubicación</a> 
+                <button onclick="location.href='./Ubicacion.html'" class="boton">
+                    <img src="./Iconos/Ubicacion.png" alt="Ubicación" Class="Icono">
+                    <span class="texto">Ubicación</span>
+                </button>
             </li>
         </ul>
     </nav>
 
-    <h1>
-        Contacto
-    </h1>
-
-    <p>
-      Para más información o soporte, contactar al área de sistemas de la institución CESDE:      
-    </p>
-
-    <ul>
-        <li>
-           <strong> Correo: </strong> comunicaciones@cesde.edu.co  
-        </li>
-        <li>
-            <strong> Teléfono: </strong> (604) 2291100
-        <li>
-            <strong> Oficina: </strong> Medellín: Calle 49 41 - 9.
-        </li>
-    </ul>
-
-    <img src="./img/Contacto-cesde.jpg" width="200px" height="200px">
+    <section class="contact-section">
+        <div class="image-side">
+            <img src="./img/Contacto-cesde.jpg" alt="Atención CESDE">
+        </div> 
+        <div class="text-side">
+            <h2>Contacto</h2>
+            <p>
+              Para más información o soporte, contacta al área de sistemas de la institución CESDE:
+              <br><br>
+              <strong>Correo:</strong> comunicaciones@cesde.edu.co<br>
+              <strong>Teléfono:</strong> (604) 2291100<br>
+              <strong>Oficina:</strong> Medellín, Calle 49 41 - 9
+            </p>
+        </div>
+    </section>
 
     <footer style="position: fixed; bottom: 0;">
         <p>

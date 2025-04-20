@@ -1,0 +1,198 @@
+.Inicio {
+    background: rgb(218,10,46);
+    background: linear-gradient(90deg, rgba(218,10,46,1) 0%, rgba(218,10,46,1) 35%, rgba(218,26,104,1) 100%);
+
+}
+.logo-container{
+    display: flex;
+}
+
+.fraja-degradado{
+    background: linear-gradient(to right #240636, #c31432);
+    padding: 0;
+    margin: 0;
+}
+.franja-blanca{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 60px;
+}
+
+/*Centrar Iconos*/
+.Centrar {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 60px; 
+    z-index: 1000; /
+}
+
+/*Centrar verticalmente los iconos*/
+ul{
+    position: relative;
+    display: flex;
+    gap: 25px;
+}
+
+/*Centrar verticalmente los iconos*/
+ul li {
+    position: relative;
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    top:0;
+    transition: 0.5s;
+}
+
+/*Movimiento de los botones*/
+ul li:hover{
+width: 180px;
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+}
+
+/*Movimiento de los botones*/
+ul li::before{
+    content: ' ';
+    position:relative;
+    inset:0;
+    border-radius: 50px;
+    opacity: 0;
+    transition: 0.5;
+}
+
+/* Color de fondo del botón */
+.boton {
+    background-color: #c218a000; 
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    transition: background 0.3s, transform 0.2s;
+}
+
+/* Iconos dentro de los botones */
+.boton img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Efecto al pasar el mouse */
+.boton:hover {
+    background-color: #ec066600;
+    transform: scale(1.1);
+}
+
+/* Efecto al presionar */
+.boton:active {
+    transform: scale(0.9);
+}
+
+/* Ocultar texto y mostrarlo al pasar el mouse */
+.boton span {
+    display: none;
+}
+
+/* Movimiento icono, texto y mostrarlo al pasar el mouse */
+.boton:hover span {
+    display: inline;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.btn {
+    display: inline-block;
+    padding: 0.9rem 1.8rem;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    border: 3px solid rgb(230, 33, 75);
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1000;
+    font-family: inherit;
+    left: 35%;
+   }
+   
+   .btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(230, 33, 75);
+    transform: translateX(-100%);
+    transition: all .3s;
+    z-index: -1;
+   }
+   
+   .btn:hover::before {
+    transform: translateX(0);
+   }
+
+   /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+   .blog-container {
+    padding: 100px 40px 80px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.blog-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    border-bottom: 3px solid white;
+    display: inline-block;
+    padding-bottom: 10px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.blog-description {
+    font-size: 18px;
+    margin-bottom: 40px;
+    max-width: 800px;
+}
+
+.blog-post {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    transition: background 0.3s ease;
+}
+
+.blog-post:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.blog-post h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.blog-post p {
+    font-size: 16px;
+    line-height: 1.6;
+}
