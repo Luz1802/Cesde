@@ -23,7 +23,7 @@
     display: flex;
     justify-content: center; 
     align-items: center; 
-    position: fixed; 
+    position: absolute; 
     top: 0; 
     left: 0; 
     width: 100%; 
@@ -128,7 +128,7 @@ ul li::before{
     overflow: hidden;
     z-index: 1000;
     font-family: inherit;
-    left: 35%;
+    left: 25%;
    }
    
    .btn::before {
