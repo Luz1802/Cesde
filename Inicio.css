@@ -87,7 +87,7 @@ ul li::before{
     font-size: 18px;
     font-weight: bold;
     color: rgb(0, 0, 0);
-    transition: background 0.3s, transform 0.2s;
+    transition: background 1s, transform 1s;
 }
 
 /* Iconos dentro de los botones */
