@@ -1,7 +1,11 @@
 .Inicio {
-    background: rgb(218,10,46);
-    background: linear-gradient(90deg, rgba(218,10,46,1) 0%, rgba(218,10,46,1) 35%, rgba(218,26,104,1) 100%);
+  background: linear-gradient(135deg, #EC1E79 0%, #DA0A2E 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Se asegura que el fondo ocupe toda la pantalla */
+  width: 100%;
 }
+
 .logo-container{
     display: flex;
 }
@@ -13,6 +17,7 @@
 }
 .franja-blanca{
     background-color: rgb(255, 255, 255);
+    border-bottom: 4px solid #e6007e; /* Línea rosa */
     width: 100%;
     height: 60px;
 }
@@ -119,82 +124,71 @@ ul li::before{
 
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-.Titulo{
-    color: rgb(255, 255, 255) ; font-size: 40px; text-align: center; font-family:'Oswald', sans-serif;
-    position:relative;
-    top: 20px;
-    line-height: 1.6;
-    }
+/* Estilos generales */
+.Titulo, .P1, .Descripción, .ContBody1, .ContBody2, .ContBody3, .ContBody4 {
+  color: rgb(255, 255, 255);
+  line-height: 1.6;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
 
-    .P1{
-        color: rgb(255, 255, 255) ; font-size: 16px; text-align: center; font-family:'Montserrat', sans-serif;
-        position:relative;
-        top: 50px;
-        line-height: 1.6;
-    }
+/* Ajustes específicos */
+.Titulo {
+  font-size: 42px;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
 
-    .Descripción{
-        color: rgb(255, 255, 255) ; font-size: 20px;  font-weight: 700; text-align: left; font-family:'Montserrat', sans-serif;
-        position:relative;
-        left: 20px;
-        top: 80px;
-        line-height: 1.6;
-    }
+.P1 {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  margin-top: 50px;
+}
 
-    .ContBody1{
-        color: rgb(255, 255, 255) ; font-size: 17px; text-align: left; font-family:'Montserrat', sans-serif;
-        position:relative;
-        left: 20px;
-        top: 110px;
-        line-height: 1.6;
-    }
+.contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 40px;
+  background: #2C2C2C;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
+  margin-top: 80px; /* Movemos el contenedor más abajo */
+}
 
-    .ContBody2{
-        color: rgb(255, 255, 255) ; font-size: 17px; text-align: left; font-family:'Montserrat', sans-serif;
-        position:relative;
-        left: 20px;
-        top: 130px;
-        line-height: 1.6;
-    }
+.cajaTexto {
+  padding: 35px;
+  border-radius: 15px;
+  background: #404040;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.25);
+}
 
-    .ContBody3{
-        color: rgb(255, 255, 255) ; font-size: 17px; text-align: left; font-family:'Montserrat', sans-serif;
-        position:relative;
-        left: 20px;
-        top: 150px;
-        line-height: 1.6;
-    }
+.Descripción {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: rgb(236, 30, 121);
+}
 
-    .ContBody4{
-        color: rgb(255, 255, 255) ; font-size: 17px; text-align: left; font-family:'Montserrat', sans-serif;
-        position:relative;
-        left: 20px;
-        top: 170px;
-        line-height: 1.6;
-    }
+.ContBody1, .ContBody2, .ContBody3, .ContBody4 {
+  font-size: 19px;
+  line-height: 2;
+  margin-bottom: 15px;
+}
 
-    .ImgInicio{
-        max-width: 30%;
-        height: auto;
-        border-radius: 10px;
-       margin-right: 50px;
-       float: right;
-       background: var(--bg) no-repeat center;
-       background-size: cover;
-       position: relative;
-       box-shadow: 4px 4px 10px white;
-    }
+.ImgInicio {
+  max-width: 45%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(243, 22, 125, 0.9), 0px 0px 40px rgba(255, 255, 255, 0.6);
+  background: transparent; /* Aseguramos que el fondo de la imagen no interfiera */
+}
 
-    .ImgInicio::after{
-        background: inherit;
-        position: absolute;
-        content: ' ';
-        filter: blur(25px) saturate(1.5);
-        width: 100%;
-        height: 100%;
-        scale: 1.05;
-        z-index: -1;
-    }
 
     /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 

@@ -1,8 +1,11 @@
 .Inicio {
-    background: rgb(218,10,46);
-    background: linear-gradient(90deg, rgba(218,10,46,1) 0%, rgba(218,10,46,1) 35%, rgba(218,26,104,1) 100%);
-
-}
+    background: linear-gradient(135deg, #EC1E79 0%, #DA0A2E 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Se asegura que el fondo ocupe toda la pantalla */
+    width: 100%;
+  }
+  
 .logo-container{
     display: flex;
 }
@@ -123,10 +126,13 @@ ul li::before{
 /* Estilo del mapa */
 .mapa {
     border: 3px solid #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    border-radius: 20px; 
+    box-shadow: inset 0px 0px 20px rgba(243, 22, 125, 0.9), 
+                inset 0px 0px 40px rgba(255, 255, 255, 0.6); /* Neón dentro del contenedor */
     width: 70%;
     height: 70%;
+    background: #404040; /* Fondo gris para que coincida con la sección de contacto */
+    padding: 15px; 
 }
 
 .h1 {

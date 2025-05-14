@@ -1,8 +1,11 @@
 .Inicio {
-    background: rgb(218,10,46);
-    background: linear-gradient(90deg, rgba(218,10,46,1) 0%, rgba(218,10,46,1) 35%, rgba(218,26,104,1) 100%);
-
+  background: linear-gradient(135deg, #EC1E79 0%, #DA0A2E 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Se asegura que el fondo ocupe toda la pantalla */
+  width: 100%;
 }
+
 .logo-container{
     display: flex;
 }
@@ -122,47 +125,60 @@ body {
 
 .contact-section {
   display: flex;
-  place-items: center;
-  flex-wrap: wrap;
-  max-width: 500px;
-  margin: 50px auto;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  border-radius: 12px;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  max-width: 1100px; /* Aumentamos el tamaño */
+  margin: 200px auto; /* Bajamos la sección */
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
   overflow: hidden;
-  background-color: white;
+  background: #2C2C2C;
+  gap: 40px; /* Ajustamos el espacio entre imagen y texto */
+  padding: 30px;
 }
 
 .image-side {
   flex: 1;
-  min-width: 300px;
-  background-color: #fff;
+  min-width: 350px; /* Aumentamos ligeramente */
 }
 
 .image-side img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(243, 22, 125, 0.9), 
+              0px 0px 40px rgba(255, 255, 255, 0.6); /* Efecto neón */
+  background: transparent; /* Evitamos interferencias con el fondo */
 }
 
+
 .text-side {
-  flex: 1;
-  padding: 40px;
-  background-color: #d40029;
+  flex: 2;
+  padding: 50px;
+  background: #404040;
   color: white;
   display: flex;
   flex-direction: column;
+  border-radius: 20px;
   justify-content: center;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.25);
 }
 
 .text-side h2 {
-  font-size: 28px;
+  font-size: 26px; /* Igualamos tamaño a Descripción */
+  font-weight: 700;
   margin-bottom: 20px;
+  color: rgb(236, 30, 121);
 }
 
 .text-side p {
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 19px; /* Igualamos a ContBody */
+  line-height: 2;
+  margin-bottom: 15px;
 }
+
 
 
 

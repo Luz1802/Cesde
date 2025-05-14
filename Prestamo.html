@@ -60,35 +60,34 @@ frameborde="0"
  <body class="Inicio">
 
 
-    <form action="/Solicitar Préstamo" method="POST">
-        <h1>Solicitud de Préstamo de Equipos</h1>
+        <div class="container">
+            <form class="formulario-prestamo" action="/Solicitar Préstamo" method="POST">
+                <h1 class="form_details">Solicitud de Préstamo de Equipos</h1>
+                
+                <label for="Nombre">Nombre Completo</label>
+                <input type="text" id="Nombre" name="Nombre" class="input" required>
         
-        <label for="Nombre">Nombre Completo</label>
-        <input type="text" id="Nombre" name="Nombre" required>
-        <br><br>
-
-        <label for="Documento">Número de Documento</label>
-        <input type="text" id="Documento" name="Documento" required>
-        <br><br>
-
-        <label for="Equipo">Tipo de Equipo:</label>
-        <select id="Equipo" name="Equipo" required>
-            <option value="DS">Desarollo de Software</option>
-            <option value="DG">Diseño Gráfico</option>
-            <option value="HO">Herramientas Ofimáticas</option>
-        </select>
-        <br><br>
-
-        <label for="Fecha">Fecha de Préstamo</label>
-        <input type="date" id="Fecha" name="Fecha" required>
-        <br><br>
-
-        <label for="Hora">Hora de Préstamo</label>
-        <input type="time" id="Hora" name="Hora" required>
-        <br><br>
-
-        <button type="submit">Solicitar Préstamo</button>
-    </form>
+                <label for="Documento">Número de Documento</label>
+                <input type="text" id="Documento" name="Documento" class="input" required>
+        
+                <label for="Equipo">Tipo de Equipo</label>
+                <select id="Equipo" name="Equipo" class="select" required>
+                    <option value="DS">Desarrollo de Software</option>
+                    <option value="DG">Diseño Gráfico</option>
+                    <option value="HO">Herramientas Ofimáticas</option>
+                </select>
+        
+                <label for="Fecha">Fecha de Préstamo</label>
+                <input type="date" id="Fecha" name="Fecha" class="input" required>
+        
+                <label for="Hora">Hora de Préstamo</label>
+                <input type="time" id="Hora" name="Hora" class="input" required>
+        
+                <button type="submit" class="btn-prestamo">Solicitar Préstamo</button>
+            </form>
+        </div>
+    
+    
 
  </body>
 </html>
